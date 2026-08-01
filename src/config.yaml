@@ -1,0 +1,29 @@
+# Configuracion de columnas a conservar de cada archivo
+# Creamos diccionarios con Clave: Nombre de archivo y Valor: Lista de columnas a conservar
+archivos_uber:
+  driver_lifetime_trips-0.csv:
+    - request_timestamp_local
+    - begintrip_timestamp_local
+    - dropoff_timestamp_local
+    - trip_distance_miles
+    - trip_duration_seconds
+    - status
+    - is_completed
+    - driver_upfront_fare_local
+    - surge_multiplier
+    - toll_amount_local
+    - cancellation_fee_local
+    - is_cash_trip
+    - is_airport_trip
+    - is_scheduled_trip
+  driver_lifetime_payments-0.csv:
+    - Local Amount
+    - Classification
+    - Category
+    - Local Timestamp
+  driver_app_analytics-0.csv:
+    - Event Time (UTC)
+    - Is Driver Online?
+    - Driver Status
+    - Latitude
+    - Longitude
