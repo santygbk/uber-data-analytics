@@ -29,8 +29,7 @@ logging.basicConfig(
 
 # Raíz del proyecto = una carpeta arriba de src/ (donde vive este archivo).
 # Sirve para construir defaults que funcionan sin importar desde qué
-# directorio se ejecute el script (evita el clásico bug de rutas relativas
-# rotas al correr "python ingestion.py" parado dentro de src/).
+# directorio se ejecute el script
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
