@@ -45,7 +45,7 @@ logger = logging.getLogger(__name__)
 
 # ---- Supuestos configurables (ver docstring del módulo) --------------------
 UTC_OFFSET_HOURS = -3  # Argentina, fijo todo el año
-PAYMENT_MATCH_TOLERANCE = pd.Timedelta("15min")  # margen para casar pago <-> viaje
+PAYMENT_MATCH_TOLERANCE = pd.Timedelta("30min")  # margen para casar pago <-> viaje (ver diagnose_unmatched.py)
 TELEMETRY_EXTRA_MARGIN = pd.Timedelta("2min")     # margen extra sobre el rango del viaje
 
 
