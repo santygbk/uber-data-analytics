@@ -1,0 +1,48 @@
+archivos_uber:
+  driver_lifetime_trips-0.csv:
+    # Identidad / metadata del viaje
+    - driver_trip_number      # contador secuencial de Uber (no es UUID, pero es real)
+    - currency_code
+    - request_timestamp_local
+    - begintrip_timestamp_local
+    - dropoff_timestamp_local
+    - trip_distance_miles
+    - trip_duration_seconds
+    - status
+    - is_completed
+    - surge_multiplier
+    - is_cash_trip
+    - is_airport_trip
+    - is_scheduled_trip
+
+    # Desglose financiero (necesario para calcular ganancia neta real en metrics.py)
+    - driver_upfront_fare_local
+    - original_fare_local
+    - base_fare_local
+    - surge_fare_local
+    - per_mile_fare_local
+    - per_minute_fare_local
+    - wait_time_fare_local
+    - minimum_fare_roundup_local
+    - booking_fee_local
+    - service_fee_local
+    - toll_amount_local
+    - cancellation_fee_local
+    - promotion_local
+    - credits_local
+    - rounding_down_amount_local
+    - long_distance_surcharge_local
+
+  driver_app_analytics-0.csv:
+    - Event Time (UTC)
+    - Is Driver Online?
+    - Driver Status
+    - Latitude
+    - Longitude
+
+  driver_payments-0.csv:
+    - Trip UUID
+    - Local Amount
+    - Classification
+    - Category
+    - Local Timestamp
